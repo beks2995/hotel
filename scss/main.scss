@@ -1,0 +1,176 @@
+@mixin placeholder{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #BDBDBD;
+}
+.main{
+  position: relative;
+  z-index: 0;
+  &__img{
+    height: 388px;
+    width: 100%;
+    display: none;
+    background: url("../img/main/main-iphone.png") center/cover;
+  }
+  &-slider{
+    height: 615px;
+    width: 100%;
+    &_1{
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.10268137254901966) 63%, rgba(255,255,255, 0.5998774509803921) 100%), url('../img/main/main-slider-1.png') center/cover;
+    }
+    &_2{
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.10268137254901966) 63%, rgba(255,255,255,0.5998774509803921) 100%), url('../img/main/main-slider-2.png') center/cover;
+    }
+    &_3{
+       background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.10268137254901966) 63%, rgba(255,255,255,0.5998774509803921) 100%), url('../img/main/main-slider-1.png') center/cover;
+    }
+    &_4{
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.10268137254901966) 63%, rgba(255,255,255,0.5998774509803921) 100%), url('../img/main/main-slider-3.png') center/cover;
+    }
+    &_5{
+       background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.10268137254901966) 63%, rgba(255,255,255,0.5998774509803921) 100%), url('../img/main/main-slider-2.png') center/cover;
+    }
+  }
+  .owl-theme{
+    .owl-dots{
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      .owl-dot{
+        outline: none;
+        span{
+          background: #BDBDBD;
+          opacity: 0.5;
+          margin: 5px 20px 5px 0;
+        }
+        &:last-child{
+          span{
+            background: #BDBDBD;
+            opacity: 0.5;
+            margin: 5px 0 5px 0;
+          }
+        }
+        &.active{
+          span{
+            opacity: 1;
+            background: #1A7082;
+          }
+        }
+      }
+    }
+  }
+
+  &-form{
+    width: 380px;
+    background: #FFFFFF;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 10px 20px rgba(0, 0, 0, 0.04);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 120px 0 0 410px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__title{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #1A7082;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #4F4F4F;
+    }
+    input{
+      padding: 12px;
+      background: #FFFFFF;
+      border: 1px solid #BDBDBD;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      outline: none;
+    }
+    .date{
+      width: 100%;
+      position: relative;
+      input{
+        width: 100%;
+        &::-webkit-input-placeholder{
+         @include placeholder;
+        }
+      }
+      &__icon{
+        position: absolute;
+        right: 14px;
+        bottom: 31px;
+      }
+    }
+    .quantity{
+      width: 150px;
+      input{
+        width: 100%;
+        &::-webkit-input-placeholder{
+          @include placeholder;
+        }
+      }
+    }
+    &__search{
+      width: 100%;
+      background: #D29D3B;
+      padding: 7px 0;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      &:hover{
+        color: #FFFFFF;
+      }
+
+    }
+  }
+
+  &-text{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 126px;
+    padding: 40px 280px 40px 40px;
+    background: #ffffff;
+    opacity: 0.8;
+    z-index: 1;
+    &__title{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 96px;
+      text-transform: uppercase;
+      color: #1A7082;
+      width: 620px;
+      margin-bottom: 40px;
+    }
+    p{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: 0.03em;
+      color: #4F4F4F;
+      width: 620px;
+    }
+  }
+}
