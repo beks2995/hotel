@@ -1283,6 +1283,9 @@
     .reserve-popup-bottom-text{
         font-size: 33px;
     }
+    .rooms-content .description-container .box-list__items .panel.active{
+        max-height: 460px;
+    }
 }
 
 
@@ -1414,5 +1417,8 @@
     .callback-popup{
         width: 315px;
         height: 315px;
+    }
+    .rooms-content .description-container .box-list__items .panel.active {
+        max-height: 600px;
     }
 }
