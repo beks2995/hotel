@@ -145,6 +145,9 @@
 
       .img {
         position: relative;
+        display: flex;
+        align-items: center;
+        max-height: 530px;
 
         img {
           transition: 0.9s all;

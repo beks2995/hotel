@@ -78,7 +78,10 @@
   .toBook .container .initial-container {
     max-width: 1080px; }
     .toBook .container .initial-container .img {
-      position: relative; }
+      position: relative;
+      display: flex;
+      align-items: center;
+      max-height: 530px; }
       .toBook .container .initial-container .img img {
         transition: 0.9s all;
         width: 100%; }

@@ -8,7 +8,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 a {
   color: inherit;
@@ -33,7 +34,6 @@ body {
 .header {
   padding: 18px 0;
   background: #ffffff;
-  overflow: hidden;
   position: relative;
   width: 100%;
   z-index: 5;
@@ -150,9 +150,9 @@ body {
       .header .container .nav .lang #a li {
         list-style: none; }
       .header .container .nav .lang #a li:hover {
-        background-color: #F4F3F3; }
+        background: #F4F3F3; }
       .header .container .nav .lang #a li img {
-        margin: 5px 5px 0;
+        margin: 7px 12px 5px;
         cursor: pointer; }
       .header .container .nav .lang .b {
         display: none;
@@ -161,7 +161,7 @@ body {
         right: 0;
         z-index: 16;
         width: 63px;
-        height: 70px;
+        height: 122px;
         max-width: 350px;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
         border: 1px solid rgba(0, 0, 0, 0.15);
@@ -248,16 +248,6 @@ body {
   .main-slider {
     height: 615px;
     width: 100%; }
-    .main-slider_1 {
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1026813725) 63%, rgba(255, 255, 255, 0.599877451) 100%), url("../img/main/main-slider-1.png") center/cover; }
-    .main-slider_2 {
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1026813725) 63%, rgba(255, 255, 255, 0.599877451) 100%), url("../img/main/main-slider-2.png") center/cover; }
-    .main-slider_3 {
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1026813725) 63%, rgba(255, 255, 255, 0.599877451) 100%), url("../img/main/main-slider-1.png") center/cover; }
-    .main-slider_4 {
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1026813725) 63%, rgba(255, 255, 255, 0.599877451) 100%), url("../img/main/main-slider-3.png") center/cover; }
-    .main-slider_5 {
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1026813725) 63%, rgba(255, 255, 255, 0.599877451) 100%), url("../img/main/main-slider-2.png") center/cover; }
   .main .owl-theme .owl-dots {
     position: absolute;
     bottom: 15px;
@@ -405,7 +395,8 @@ body {
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: #1A7082;
-    margin-top: 20px; }
+    margin-top: 20px;
+    overflow: hidden; }
     .all-content .initial-container .more:hover {
       color: #1A7082; }
   .all-content .initial-container .contacts {
@@ -431,7 +422,10 @@ body {
   .all-content .initial-container .hotels {
     margin-bottom: 100px; }
     .all-content .initial-container .hotels .img {
-      overflow: hidden; }
+      overflow: hidden;
+      max-height: 360px;
+      display: flex;
+      align-items: center; }
       .all-content .initial-container .hotels .img img {
         transition: 0.9s all;
         width: 100%; }
@@ -455,7 +449,10 @@ body {
     .all-content .initial-container .kitchen .box {
       padding: 4px 40px 0 0; }
     .all-content .initial-container .kitchen .img {
-      overflow: hidden; }
+      overflow: hidden;
+      max-height: 360px;
+      display: flex;
+      align-items: center; }
       .all-content .initial-container .kitchen .img img {
         transition: 0.9s all;
         width: 100%; }
@@ -476,7 +473,10 @@ body {
     .all-content .initial-container .conference .box {
       padding: 42px 40px 0 0; }
     .all-content .initial-container .conference .img {
-      overflow: hidden; }
+      overflow: hidden;
+      max-height: 360px;
+      display: flex;
+      align-items: center; }
       .all-content .initial-container .conference .img img {
         transition: 0.9s all;
         width: 100%; }
@@ -522,7 +522,9 @@ body {
         font-size: 14px;
         line-height: 25px;
         letter-spacing: 0.03em;
-        color: #4F4F4F; }
+        color: #4F4F4F;
+        max-height: 100px;
+        overflow: auto; }
       .all-content .rooms .row .box .more {
         display: inline-block;
         font-style: normal;

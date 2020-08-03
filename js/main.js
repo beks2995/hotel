@@ -92,6 +92,11 @@ $(document).ready(function(){
     })
 
 
+    $('.datepicker-here').datepicker({
+        autoClose: true
+    })
+
+
 });
 
 

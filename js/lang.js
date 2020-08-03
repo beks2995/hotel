@@ -40,5 +40,7 @@ if (sessionLang){
     var langIndex = langArray.indexOf('ch');
     console.log(langIndex);
     $('.btn-select').html(langArray[langIndex]);
-    //$('.btn-select').attr('value', 'en');
+    $('.btn-select').attr('value', 'en');
 }
+
+

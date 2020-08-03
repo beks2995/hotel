@@ -369,6 +369,9 @@
         width: 24%;
         margin-right: 0;
     }
+    .toBook .container .initial-container .img img{
+        max-height: 560px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -555,6 +558,9 @@
     }
     .reserve-popup-bottom-form label {
         width: 320px;
+    }
+    .toBook .container .initial-container .img img{
+        max-height: 454px;
     }
 
 }

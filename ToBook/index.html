@@ -29,7 +29,7 @@
                 <div class="contact-tabs__icon"><i class="fas fa-phone-alt"></i></div>
             </div>
             <ul class="menu">
-                <li class="menu__items"><a href="#">Отель №2</a></li>
+                <li class="menu__items"><a href="../Supura/index.html">Отель Супура</a></li>
                 <li class="menu__items"><a href="../Rooms/index.html">номера</a></li>
                 <li class="menu__items"><a href="../Conference-hall/index.html">Конференц зал</a></li>
                 <li class="menu__items"><a href="../Kitchen/index.html">Кафе</a></li>
@@ -38,7 +38,8 @@
                 <label>
                     <select class="vodiapicker">
                         <option value="en" class="test" data-thumbnail="../img/header/lang-1.png"></option>
-                        <option value="en" class="test" data-thumbnail="../img/header/lang-2.png"></option>
+                        <option value="ru" class="test" data-thumbnail="../img/header/lang-2.png"></option>
+                        <option value="tr" class="test" data-thumbnail="../img/header/lang-3.png"></option>
                     </select>
                 </label>
                 <div class="lang-select">
@@ -48,6 +49,7 @@
                     </div>
                 </div>
                 <img src="../img/header/angle-down.png" alt="angle-down" class="angle-down">
+
             </div>
             <div class="wrapper">
                 <a href="#" class="book">Book now</a>
@@ -61,27 +63,27 @@
 <!--конец шапки-->
 <main class="toBook">
     <div class="container">
-        <form action="" class="toBook-form">
+        <form action="" class="toBook-form" id="book-form">
             <h2 class="toBook-form__title">Бронировать номер</h2>
             <label class="quantity">
                 Количество людей
-                <input type="number" placeholder="Adults">
+                <input type="number" placeholder="Adults" id="adults">
             </label>
             <label class="quantity">
                 Дети
-                <input type="number" placeholder="Children">
+                <input type="number" placeholder="Children" id="children">
             </label>
             <label class="date">
                 Дата въезда
-                <input placeholder="Check In" class="datepicker-here" type="text">
+                <input placeholder="Check In" class="datepicker-here" type="text" data-timepicker="true" id="check_in">
                 <img src="../img/main/calendar.png" alt="dateIcon" class="date__icon">
             </label>
             <label class="date">
-                Дата въезда
-                <input placeholder="Check In" class="datepicker-here" type="text">
+                Дата выезда
+                <input placeholder="Check Out" class="datepicker-here" type="text" data-timepicker="true" id="check_out">
                 <img src="../img/main/calendar.png" alt="dateIcon" class="date__icon">
             </label>
-            <a href="#" class="toBook-form__search">Поиск доступных номеров</a>
+            <a href="#" class="toBook-form__search" id="form-searh">Поиск доступных номеров</a>
         </form>
     </div>
     <div class="contactUs">
@@ -92,10 +94,10 @@
         <div class="consult">
 
             <ul class="social">
-                <li class="social-link"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                <li class="social-link"><a href="#"><i class="fab fa-skype"></i></a></li>
-                <li class="social-link"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li class="social-link"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="social-link"><a href="https://wa.me/996777300600?text=Здравствуйте, хотели забронировать номер в вашем отеле" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                <li class="social-link"><a href="skype:+12345678?call" target="_blank"><i class="fab fa-skype"></i></a></li>
+                <li class="social-link"><a href="https://www.instagram.com/?hl=ru" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li class="social-link"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
             </ul>
             <div class="consult-social"><img src="../img/icon-social.png" alt="consult"></div>
         </div>
@@ -519,5 +521,6 @@
 <script src="../js/accordion.js"></script>
 <script src="../js/datepicker.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="../js/datebook.js"></script>
 </body>
 </html>

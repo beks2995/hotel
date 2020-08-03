@@ -10,6 +10,14 @@ $(document).ready(function(){
         $('.reserve-popup-bottom-form').addClass('disabled');
     })
 
+    $('.reserve-popup-bottom-form').submit(function (e) {
+        var form = this;
+        e.preventDefault();
+        setTimeout(function () {
+            form.submit();
+        }, 4000); // in milliseconds
+    });
+
 });
 
 

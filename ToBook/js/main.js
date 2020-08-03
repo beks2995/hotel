@@ -57,6 +57,10 @@ $(document).ready(function(){
         $('main').toggleClass('active');
     })
 
+    $('.datepicker-here').datepicker({
+        autoClose: true
+    })
+
 });
 
 
