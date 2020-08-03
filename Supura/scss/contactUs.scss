@@ -1,0 +1,181 @@
+@mixin center{
+  background: #1A7082;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin circle{
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.contactUs{
+  position: sticky;
+  top: 300px;
+  width: 100%;
+  max-height: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 15;
+  .callback{
+    &-buttons{
+      display: flex;
+      align-items: center;
+    }
+    &-link{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      cursor: pointer;
+      &:first-child{
+        position: relative;
+        margin: 0 48px 0 68px;
+        font-size: 19px;
+        &:before{
+          content: '';
+          position: absolute;
+          width: 72px;
+          height: 72px;
+          @include circle;
+          z-index: 10;
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 16px 24px rgba(0, 0, 0, 0.06);
+          background: #ffffff;
+          top: -18px;
+          left: -18px;
+        }
+        span{
+          position: relative;
+          width: 36px;
+          height: 36px;
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 16px 24px rgba(0, 0, 0, 0.06);
+
+          @include circle;
+          @include center;
+          z-index: 11;
+          &:before{
+            width: 152px;
+            height: 152px;
+            content: '';
+            position: absolute;
+            @include circle;
+            background: #1A7082;
+            opacity: 0.05;
+            z-index: 8;
+          }
+          &:after{
+            content: '';
+            position: absolute;
+            width: 112px;
+            height: 112px;
+            @include circle;
+            background: #1A7082;
+            opacity: 0.05;
+            z-index: 9;
+          }
+
+        }
+      }
+      &:last-child{
+        span{
+          position: relative;
+          width: 146px;
+          height: 30px;
+          @include center;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          border-radius: 15px;
+          &:before{
+            content: '';
+            position: absolute;
+            width: 176px;
+            height: 60px;
+            background: #1A7082;
+            opacity: 0.05;
+            border-radius: 30px;
+          }
+          &:after{
+            content: '';
+            position: absolute;
+            width: 206px;
+            height: 90px;
+            background: #1A7082;
+            opacity: 0.05;
+            border-radius: 50px;
+          }
+        }
+      }
+
+    }
+  }
+
+  .consult{
+    &-social{
+      max-width: 152px;
+      max-height: 152px;
+      cursor: pointer;
+    }
+    .social{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      font-size: 25px;
+      align-items: center;
+      transition: 0.8s all;
+      &-link{
+        display: flex;
+        visibility: hidden;
+        justify-content: center;
+        align-items: center;
+        width: 0;
+        height: 0;
+        color: transparent;
+        position: relative;
+        z-index: 14;
+        margin-bottom: -48px;
+        transition: 0.8s all;
+        @include circle;
+        &.active{
+          width: 36px;
+          height: 36px;
+          visibility: visible;
+          margin-bottom: 76px;
+          color: #ffffff;
+          &:first-child{
+            margin-bottom: 18px;
+          }
+          &:after{
+            content: '';
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 16px 24px rgba(0, 0, 0, 0.06);
+            width: 72px;
+            height: 72px;
+            position: absolute;
+            z-index: 13;
+            @include circle;
+          }
+        }
+        &:nth-child(1){
+          background: #12B03E;
+        }
+        &:nth-child(2){
+          background: #1C8CDE;
+        }
+        &:nth-child(3){
+          background: #D8177F;
+        }
+        &:nth-child(4){
+          background: #4D7BB0;
+        }
+        svg{
+          position: relative;
+          z-index: 15;
+        }
+      }
+
+    }
+  }
+}

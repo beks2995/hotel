@@ -1,0 +1,83 @@
+.about {
+  padding: 126px 0;
+  background: url("../../img/about/bg.png") center/cover; }
+  .about-block {
+    padding: 40px;
+    background: #1A7082;
+    opacity: 0.9;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .about-block__title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 96px;
+      text-align: right;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 40px; }
+    .about-block__text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 25px;
+      text-align: right;
+      letter-spacing: 0.03em;
+      color: #FFFFFF;
+      width: 605px; }
+  .about-description .initial-container {
+    max-width: 800px;
+    margin: 0 auto; }
+    .about-description .initial-container:nth-child(1) .box:nth-child(1) {
+      margin-top: 50px; }
+    .about-description .initial-container .box h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+      text-transform: uppercase;
+      color: #1A7082;
+      margin-bottom: 20px; }
+    .about-description .initial-container .box p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: 0.03em;
+      color: #4F4F4F;
+      margin-bottom: 40px; }
+  .about-description .contactUs {
+    z-index: 2; }
+  .about-description:last-child .initial-container .box {
+    margin-bottom: 100px; }
+  .about-slider {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative; }
+    .about-slider .owl-theme .owl-nav .nxtBtn, .about-slider .owl-theme .owl-nav .prvBtn {
+      position: absolute;
+      display: inline-block;
+      background-position: center;
+      background-size: cover;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 54px;
+      height: 100px;
+      z-index: 4;
+      cursor: pointer; }
+    .about-slider .owl-theme .owl-nav .prvBtn {
+      background: url("../../img/about/arr-left.png");
+      left: -97px; }
+    .about-slider .owl-theme .owl-nav .nxtBtn {
+      background: url("../../img/about/arr-right.png");
+      right: -97px; }
+    .about-slider .about-img {
+      overflow: hidden; }
+      .about-slider .about-img img {
+        transition: 0.5s all; }
+        .about-slider .about-img img:hover {
+          transform: scale(1.2); }
+
+/*# sourceMappingURL=about.css.map */

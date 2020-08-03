@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/check.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+
+    <div class="reserve-popup">
+        <div class="reserve-popup-top">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="img">
+                        <img src="../img/tobook/checked-room.png" alt="reservation">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box">
+                        <ul class="box-menu">
+                            <li class="box-menu__items">
+                                <h3 class="box-menu__title">Номера эконом</h3>
+                                <ul class="info">
+                                    <li class="info__items">Sleeps 2</li>
+                                    <li class="info__items">1 King</li>
+                                    <li class="info__items">325 to 355 ft²</li>
+                                </ul>
+                                <p class="box-menu__text">Styled like a traditional hotel room and a favorite for
+                                    couples.</p>
+                                <div class="panel">
+                                    <h4>some desctiption</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aperiam
+                                        consectetur, culpa dignissimos distinctio doloribus eligendi facere, harum illo
+                                        magni maiores minima molestiae molestias natus nihil officiis praesentium quam
+                                        ratione saepe suscipit vel veritatis vero! Debitis, eligendi ipsum libero magnam
+                                        sed voluptatem. Assumenda dolorem, eos fugit minus nemo quis repudiandae.</p>
+                                </div>
+                                <div class="hidden-block">
+                                    <button class="accordion">Узнать больше...</button>
+                                    <span class="hidden-text">Скрыть</span>
+                                </div>
+                            </li>
+                            <li class="box-menu__items">
+                                <ul class="box-price">
+                                    <li class="box-price__items"><h3 class="box-price__title">Hotel Terra Jackson
+                                        Hole </h3></li>
+                                    <li class="box-price__items"><p class="box-price__desc">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. At viverra egestas magna viverra. </p></li>
+                                    <li class="box-price__items"><p class="box-price__price">$444.87</p></li>
+                                    <li class="box-price__items"><h5 class="box-price__subtitle">Lorem ipsum</h5></li>
+                                    <li class="box-price__items"><p class="box-price__total">$7,117.90 Total for 16
+                                        nights
+                                        <br>
+                                        Excluding Taxes & Fees</p></li>
+                                    <li class="box-price__items">
+                                        <button class="box-price__check">выбрано</button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cart">
+                <h3 class="cart__title">YOUR STAY</h3>
+                <p class="cart__checkIn"><b>Check-in</b> <br>
+                    After 4:00 PM</p>
+                <p class="cart__checkOut"><b>Check-out</b> <br>
+                    Before 12:00 PM</p>
+                <div class="cart__dates">
+                    <span>Tue, Jul 14, 2020</span>
+                    -
+                    <span>Thu, Jul 30, 2020</span>
+                    <span>2 Adult</span>
+                </div>
+                <div class="cart__total">
+                    <span>Total:</span>
+                    <span>$889</span>
+                </div>
+            </div>
+            <a href="../ToBook/index.html"><span class="close-reserve-overlay"></span></a>
+        </div>
+        <div class="reserve-popup-bottom">
+            <form class="reserve-popup-bottom-form">
+                <label>
+                    Фамилия
+                    <input type="text" placeholder="Surname">
+                </label>
+                <label>
+                    Имя
+                    <input type="text" placeholder="Name">
+                </label>
+                <label>
+                    Телефон
+                    <input type="tel" placeholder="Number">
+                </label>
+                <label>
+                    E-mail
+                    <input type="email" placeholder="E-mail">
+                </label>
+                <div class="img">
+                    <img src="../img/tobook/book-logo.png" alt="logos">
+                </div>
+                <button class="toBook-room">бронировать</button>
+            </form>
+            <div class="reserve-popup-bottom-text">
+                Ваше бронирование <br>
+                успешно произведено
+            </div>
+        </div>
+    </div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.maskedinput.js"></script>
+<script src="../js/accordion.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+  &:hover{
+    color: inherit;
+  }
+}
+ul{
+  list-style-type: none;
+}
+input[type='date']{
+  max-height: 40px;
+  &::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+  }
+}
+$steelbue: #1A7082;
+
+@import "../css/owl.carousel.min.css";
+@import "../css/owl.theme.default.min.css";
+@import "../css/bootstrap-grid.min.css";
+@import "../fonts/fontawesome/all.min.css";
+@import "../fonts/roboto/stylesheet.css";
+@import "../css/datepicker.min.css";
+@import "../css/jquery.fancybox.min.css";
+
+body{
+  font-family: 'Roboto';
+  opacity: 0;
+  transition: 0.7s all;
+}
+
+@import "header";
+@import "main";
+@import "all-content";
+@import "choose";
+@import "footer";
+@import "overlays";
+@import "contactUs";
+
+

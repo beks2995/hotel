@@ -1,0 +1,25 @@
+.choose{
+  padding: 100px 0 334px;
+  background: url("../img/choose-bg.png") center/cover;
+  .box{
+    margin-left: 560px;
+    .title{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+      text-transform: uppercase;
+      color: #1A7082;
+      margin-bottom: 20px;
+    }
+    .text{
+      width: 380px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: 0.03em;
+      color: #4F4F4F;
+    }
+  }
+}

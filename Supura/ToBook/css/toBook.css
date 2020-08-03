@@ -1,0 +1,344 @@
+.toBook-form {
+  background: #FFFFFF;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 10px 20px rgba(0, 0, 0, 0.04);
+  margin: 76px 0 100px;
+  padding: 40px;
+  width: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; }
+  .toBook-form__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #1A7082;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px; }
+  .toBook-form label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4F4F4F;
+    margin-right: 20px; }
+    .toBook-form label:nth-child(5) {
+      margin-right: 0; }
+  .toBook-form input {
+    padding: 12px;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    outline: none; }
+  .toBook-form .date {
+    width: 320px;
+    position: relative; }
+    .toBook-form .date input {
+      width: 100%; }
+      .toBook-form .date input::-webkit-input-placeholder {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #BDBDBD; }
+    .toBook-form .date__icon {
+      position: absolute;
+      right: 14px;
+      bottom: 31px; }
+  .toBook-form .quantity {
+    width: 150px; }
+    .toBook-form .quantity input {
+      width: 100%; }
+      .toBook-form .quantity input::-webkit-input-placeholder {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #BDBDBD; }
+  .toBook-form__search {
+    width: 320px;
+    background: #D29D3B;
+    padding: 7px 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+    .toBook-form__search:hover {
+      color: #FFFFFF; }
+.toBook .contactUs {
+  top: 380px;
+  z-index: 10; }
+.toBook .container {
+  position: relative; }
+  .toBook .container .initial-container {
+    max-width: 1080px; }
+    .toBook .container .initial-container .img {
+      position: relative; }
+      .toBook .container .initial-container .img img {
+        transition: 0.9s all;
+        width: 100%; }
+        .toBook .container .initial-container .img img:hover {
+          transform: scale(1.1, 1.1); }
+      .toBook .container .initial-container .img:before {
+        content: '';
+        position: absolute;
+        background: #1A7082;
+        opacity: 0.05;
+        width: 100%;
+        height: 100%;
+        bottom: -20px;
+        z-index: -1;
+        right: -20px; }
+    .toBook .container .initial-container .box {
+      padding-left: 10px;
+      margin-bottom: 122px; }
+      .toBook .container .initial-container .box-menu__items {
+        position: relative;
+        margin-bottom: 33px; }
+        .toBook .container .initial-container .box-menu__items:before {
+          content: '';
+          position: absolute;
+          bottom: -22px;
+          width: 100%;
+          height: 1px;
+          background: #1A7082;
+          opacity: 0.5; }
+        .toBook .container .initial-container .box-menu__items .info {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 25px;
+          letter-spacing: 0.03em;
+          color: #D29D3B;
+          display: flex;
+          margin-bottom: 10px; }
+          .toBook .container .initial-container .box-menu__items .info__items {
+            position: relative;
+            margin-right: 47px; }
+            .toBook .container .initial-container .box-menu__items .info__items:last-child {
+              margin-right: 0; }
+            .toBook .container .initial-container .box-menu__items .info__items:before {
+              content: '';
+              position: absolute;
+              right: -23px;
+              top: 5px;
+              height: 14px;
+              width: 1px;
+              background: #333333; }
+        .toBook .container .initial-container .box-menu__items .box-price {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          max-height: 170px; }
+          .toBook .container .initial-container .box-menu__items .box-price__items:last-child {
+            display: flex;
+            justify-content: flex-end; }
+          .toBook .container .initial-container .box-menu__items .box-price__title {
+            font-style: normal;
+            font-size: 18px;
+            line-height: 32px;
+            letter-spacing: 0.03em;
+            font-weight: 500;
+            color: #4F4F4F;
+            margin-bottom: 10px; }
+          .toBook .container .initial-container .box-menu__items .box-price__desc {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 0.03em;
+            color: #4F4F4F;
+            max-width: 240px;
+            margin-bottom: 25px; }
+          .toBook .container .initial-container .box-menu__items .box-price__price {
+            font-style: normal;
+            font-size: 18px;
+            line-height: 32px;
+            letter-spacing: 0.03em;
+            font-weight: 900;
+            color: #4F4F4F;
+            margin-bottom: 10px;
+            text-align: right; }
+          .toBook .container .initial-container .box-menu__items .box-price__subtitle {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 0.03em;
+            color: #4F4F4F;
+            text-align: right; }
+          .toBook .container .initial-container .box-menu__items .box-price__total {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 0.03em;
+            text-align: right;
+            color: #828282;
+            margin-bottom: 20px; }
+          .toBook .container .initial-container .box-menu__items .box-price__check {
+            text-align: right;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background: #D29D3B;
+            padding: 7px 35px;
+            border: none;
+            outline: none;
+            cursor: pointer; }
+      .toBook .container .initial-container .box-menu__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        text-transform: uppercase;
+        color: #1A7082;
+        margin-bottom: 20px; }
+      .toBook .container .initial-container .box-menu__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 0.03em;
+        color: #4F4F4F;
+        margin-bottom: 10px; }
+      .toBook .container .initial-container .box-menu .hidden-block {
+        position: relative; }
+        .toBook .container .initial-container .box-menu .hidden-block .accordion {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 25px;
+          letter-spacing: 0.03em;
+          text-decoration-line: underline;
+          color: #1A7082;
+          background: none;
+          cursor: pointer;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          position: relative;
+          z-index: 1; }
+          .toBook .container .initial-container .box-menu .hidden-block .accordion.active {
+            visibility: hidden; }
+      .toBook .container .initial-container .box-menu .hidden-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 0.03em;
+        text-decoration-line: underline;
+        color: #1A7082;
+        background: none;
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        visibility: hidden; }
+        .toBook .container .initial-container .box-menu .hidden-text.active {
+          visibility: visible; }
+      .toBook .container .initial-container .box-menu .panel {
+        max-height: 0;
+        transition: max-height 0.7s;
+        overflow: hidden; }
+        .toBook .container .initial-container .box-menu .panel.active {
+          max-height: 460px; }
+        .toBook .container .initial-container .box-menu .panel h4 {
+          color: #333333;
+          font-size: 18px;
+          font-weight: 600;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          text-transform: uppercase; }
+        .toBook .container .initial-container .box-menu .panel p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 25px;
+          letter-spacing: 0.03em;
+          margin-bottom: 10px; }
+    .toBook .container .initial-container .row .col-lg-6 {
+      overflow: hidden; }
+.toBook-cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 520px;
+  height: 333px;
+  padding: 40px;
+  background: #FFFFFF;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 10px 20px rgba(0, 0, 0, 0.04); }
+  .toBook-cart__title {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    color: #1A7082;
+    margin-bottom: 10px; }
+  .toBook-cart__checkIn {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 123px; }
+  .toBook-cart__checkOut {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0.03em;
+    font-weight: normal;
+    display: inline-block;
+    margin-bottom: 20px; }
+  .toBook-cart__dates {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0.03em;
+    max-width: 309px;
+    font-weight: normal;
+    margin-bottom: 31px; }
+    .toBook-cart__dates span {
+      display: inline-block; }
+  .toBook-cart__total {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0.03em;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    position: relative; }
+    .toBook-cart__total span + span {
+      font-weight: 900; }
+    .toBook-cart__total:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: #1A7082;
+      opacity: 0.5;
+      top: -10px; }
+
+.article {
+  display: none; }
+  .article.active {
+    display: block; }
+
+/*# sourceMappingURL=toBook.css.map */
